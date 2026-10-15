@@ -1,4 +1,4 @@
-package com.persianvoice.assistant.core.common.di
+package com.persianvoice.assistant.di
 
 import android.content.Context
 import androidx.room.Room
