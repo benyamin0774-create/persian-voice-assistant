@@ -149,7 +149,7 @@ abstract val riskLevel: RiskLevel
         override val riskLevel = RiskLevel.MEDIUM
     }
 
-    data class GenericAction(val description: String, val riskLevel: RiskLevel) : ConfirmationAction()
+    data class GenericAction(override val description: String, override val riskLevel: RiskLevel) : ConfirmationAction()
 }
 
 enum class RiskLevel {
