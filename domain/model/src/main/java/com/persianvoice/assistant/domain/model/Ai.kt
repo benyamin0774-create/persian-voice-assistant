@@ -116,8 +116,8 @@ sealed class AgentResult {
  * Confirmation Action - برای عملیات حساس
  */
 sealed class ConfirmationAction {
-    val description: String
-    val riskLevel: RiskLevel
+    abstract val description: String
+abstract val riskLevel: RiskLevel
 
     data class CallAction(val contactName: String, val phoneNumber: String) : ConfirmationAction() {
         override val description = "تماس با $contactName"
