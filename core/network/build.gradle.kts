@@ -23,4 +23,7 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+implementation("javax.inject:javax.inject:1")
+implementation("com.google.dagger:hilt-android:2.52")
+implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
 }
