@@ -6,7 +6,7 @@ plugins {
     id("org.jetbrains.kotlin.kapt")
 }
 
-apply(plugin: "dagger.hilt.android.plugin")
+apply(plugin: "dagger.hilt.android.plugin=)
 // UseCases فقط interface هستند و نیاز به DI annotation ندارند در سطح domain
 
 java {
