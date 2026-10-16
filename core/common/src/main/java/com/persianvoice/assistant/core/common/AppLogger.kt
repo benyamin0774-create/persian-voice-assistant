@@ -58,7 +58,7 @@ class AndroidLogger : AppLogger {
     }
 
     override fun error(message: String, throwable: Throwable?) {
-        android.util.Log.e("PVA", sanitize(message), throwable?.let { sanitize(it.message ?: "exception") })
+        android.util.Log.e("PVA", sanitize(message), throwable)
     }
 }
 
